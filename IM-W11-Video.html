@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<title>Interactive video site - Humans Need Not Apply by CGP Grey - IM Week 11</title>
+<body>
+    <div id="content">
+    <span id="headline">
+        <h1 id="header">Humans Need Not Apply <em>by CGP Grey</em></h1>
+    </span>
+    <div id="controls">
+        <button class="ctrl" id="PlayPause" onclick="playPause()"></button>
+        <button class="ctrl" id="Stop" onclick="stop()"></button>      
+        <button class="ctrl" id="Smaller" onclick="makeSmall()"></button>
+        <button class="ctrl" id="Bigger" onclick="makeBig()"></button>
+        <button class="ctrl" id="Fullscreen" onclick="fullscreen()"></button>
+        <button class="ctrl" id="Subtitles" onclick="subtitles()"></button>
+    </div>
+    <div id="chapters">
+        <ul>
+        <li><button class="b_ch" id="intro" onclick="setChapter(this.id)">Introduction</button></li>
+        <li><button class="b_ch" id="phyla" onclick="setChapter(this.id)">Physical Labor</button></li>
+        <li><button class="b_ch" id="horse" onclick="setChapter(this.id)">Luddite Horses</button></li>
+        <li><button class="b_ch" id="autos" onclick="setChapter(this.id)">Automobiles</button></li>
+        <li><button class="b_ch" id="shape" onclick="setChapter(this.id)">The Shape Of <br>Things to Come</button></li>
+        <li><button class="b_ch" id="prof" onclick="setChapter(this.id)">Professions</button></li>
+        <li><button class="b_ch" id="creala" onclick="setChapter(this.id)">Creative Labor</button></li>
+        <li><button class="b_ch" id="conc" onclick="setChapter(this.id)">Conclusion</button></li>
+        </ul>
+    </div>
+    <video id="video" width="1280" height="720" controls>
+        <source src="Humans%20Need%20Not%20Apply.mp4" type="video/mp4"
+        Your browser does not this video.
+        <track default label="English" kind="subtitles" srclang="en" src="Humans%20Need%20Not%20Apply.vtt">
+        <track kind="chapters" srclang="en" src="Humans%20Need%20Not%20Apply%20Chapters.vtt">
+    </video>
+    </div>
+    <script src="videoScript.js"></script>
+    
+    <!-- <img src="PlayPause.png" alt="Play/Pause"> -->
+</body>
+</html>

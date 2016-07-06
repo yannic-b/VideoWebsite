@@ -1,0 +1,94 @@
+body {
+    background-color: ghostwhite;
+    font-family: "San Fransisco", "Helvetica Neue", sans-serif;
+}
+
+h1 {
+    color: slategrey;
+    text-align: left;
+    font-size: 30px;
+}
+
+button {
+    background-color: gainsboro;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* button.img {
+    position: relative;
+    left: 0px;
+    top: 0px;
+} */
+
+#PlayPause {
+    background-image: url(PlayPause.png);
+}
+
+#Stop {
+    background-image: url(Stop.png);
+}
+
+#Smaller {
+    background-image: url(Smaller.png);
+}
+
+#Bigger {
+    background-image: url(Bigger.png);
+}
+
+#Fullscreen {
+    background-image: url(Fullscreen.png);
+}
+
+#Subtitles {
+    background-image: url(Subtitles.png);
+}
+
+#content {
+    position: absolute;
+    left: 2%;
+    width: 1600px;
+}
+
+#headline {
+    position: relative;
+}
+
+#controls {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+button.ctrl {
+    width: 100px;
+    height: 50PX;
+    background-size: contain;
+}
+
+#chapters {
+    float: left;
+    padding-right: 50px;
+}
+
+button.b_ch {
+    width: 200px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#video {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+
+video::cue {
+     background-color: whitesmoke;
+     color: whitesmoke;
+    text-shadow: 2px 2px 2px 2px black;
+   }
