@@ -37,7 +37,7 @@ function highlightChapter(element) {
 
 function resetChapters() {
     for (var i = 0; i < 8; i++) {
-            document.getElementsByClassName("b_ch")[i].style.backgroundColor = "gainsboro";
+            document.getElementsByClassName("chap")[i].style.backgroundColor = "gainsboro";
     }
 }
 

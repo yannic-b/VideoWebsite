@@ -18,6 +18,11 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: steelblue;
+}
+
 /* button.img {
     position: relative;
     left: 0px;
@@ -75,7 +80,7 @@ button.ctrl {
     padding-right: 50px;
 }
 
-button.b_ch {
+button.chap {
     width: 200px;
     margin-top: 20px;
     padding: 10px;
@@ -91,4 +96,15 @@ video::cue {
      background-color: whitesmoke;
      color: whitesmoke;
     text-shadow: 2px 2px 2px 2px black;
-   }
+}
+
+.infobar {
+    position: absolute;
+    top: 840px;
+    width: 100%;
+    
+}
+
+#creators {
+    text-align: right;
+}
