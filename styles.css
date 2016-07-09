@@ -16,6 +16,7 @@ h1 {
     color: rgba(255,255,255,0.3);
 }
 
+
 button {
     background-color: gainsboro;
     border: none;
@@ -116,13 +117,28 @@ button.chap {
     border-radius: 5px;
 }
 #videoDescription p {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255,255,255,0.4);
+}
+#videoDescription h2 {
+    color: rgba(255,255,255,0.4);
+    font-weight: 300;
 }
 
 video::cue {
      background-color: #fff;
      color: #fff;
     text-shadow: 2px 2px 2px 2px black;
+}
+
+#infobox{
+    margin-top: 30px;
+    width: 100%;
+    float:left;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+#infobox p{
+    font-size: 13px;
+    color: #666;
 }
 
 .infobar {
