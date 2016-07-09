@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:800,400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles.css">
 </head>
 <title>Interactive video site - Humans Need Not Apply by CGP Grey - IM Week 11</title>
 <body>
-    <div id="content">
+    <div id="videoCont">
+        <h1>Humans Need Not Apply <em>by CGP Grey</em></h1>
+        <video id="video" width="1280" height="720" controls>
+            <source src="Humans%20Need%20Not%20Apply.mp4" type="video/mp4"
+            Your browser does not this video.
+            <track default label="English" kind="subtitles" srclang="en" src="Humans%20Need%20Not%20Apply.vtt">
+            <track kind="chapters" srclang="en" src="Humans%20Need%20Not%20Apply%20Chapters.vtt">
+        </video>
+        <div id="videoDescription">
+            <p>Introduction.</p><p>Every human used to have to hunt or gather to survive. But humans are smart-ly lazy so we made tools to make our work easier. From sticks, to plows to tractors we&rsquo;ve gone from everyone needing to make food to, modern agriculture with almost no one needing to make food &mdash; and yet we still have abundance.</p><p>Of course, it&rsquo;s not just farming, it&rsquo;s everything. We&rsquo;ve spent the last several thousand years building tools to reduce physical labor of all kinds. These are mechanical muscles &mdash; stronger, more reliable, and more tireless than human muscles could ever be.</p><p>And that's a good thing. Replacing human labor with mechanical muscles frees people to specialize and that leaves everyone better off even though still doing physical labor. This is how economies grow and standards of living rise.</p><p>Some people have specialized to be programmers and engineers whose job is to build mechanical minds. Just as mechanical muscles made human labor less in demand so are mechanical minds making human brain labor less in demand.</p><p>This is an economic revolution. You may think we've been here before, but we haven't.</p><p>This time is different.</p>
+        </div>
+        <h4 class="infobar">Please visit the original creator of this video at <a href="http://www.cgpgrey.com">CGPGrey.com</a>.</h4>
+        <h5 class="infobar" id="creators">Website by "Gruppe 2 - IM 2016"</h5>
+    </div>
+    <div id="chapters">
+        <h1>Kapitel</h1>
+        <button class="chap" id="intro" onclick="setChapter(this.id)">Introduction</button>
+        <button class="chap" id="phyla" onclick="setChapter(this.id)">Physical Labor</button>
+        <button class="chap" id="horse" onclick="setChapter(this.id)">Luddite Horses</button>
+        <button class="chap" id="autos" onclick="setChapter(this.id)">Automobiles</button>
+        <button class="chap" id="shape" onclick="setChapter(this.id)">The Shape Of <br>Things to Come</button>
+        <button class="chap" id="prof" onclick="setChapter(this.id)">Professions</button>
+        <button class="chap" id="creala" onclick="setChapter(this.id)">Creative Labor</button>
+        <button class="chap" id="conc" onclick="setChapter(this.id)">Conclusion</button>
+    </div>
+    <!--
     <span id="headline">
         <h1 id="header">Humans Need Not Apply <em>by CGP Grey</em></h1>
     </span>
     <div id="controls">
         <button class="ctrl" id="PlayPause" onclick="playPause()"></button>
-        <button class="ctrl" id="Stop" onclick="stop()"></button>      
+        <button class="ctrl" id="Stop" onclick="stop()"></button>
         <button class="ctrl" id="Smaller" onclick="makeSmall()"></button>
         <button class="ctrl" id="Bigger" onclick="makeBig()"></button>
         <button class="ctrl" id="Fullscreen" onclick="fullscreen()"></button>
         <button class="ctrl" id="Subtitles" onclick="subtitles()"></button>
-    </div>
-    <div id="chapters">
-        <ul>
-        <li><button class="chap" id="intro" onclick="setChapter(this.id)">Introduction</button></li>
-        <li><button class="chap" id="phyla" onclick="setChapter(this.id)">Physical Labor</button></li>
-        <li><button class="chap" id="horse" onclick="setChapter(this.id)">Luddite Horses</button></li>
-        <li><button class="chap" id="autos" onclick="setChapter(this.id)">Automobiles</button></li>
-        <li><button class="chap" id="shape" onclick="setChapter(this.id)">The Shape Of <br>Things to Come</button></li>
-        <li><button class="chap" id="prof" onclick="setChapter(this.id)">Professions</button></li>
-        <li><button class="chap" id="creala" onclick="setChapter(this.id)">Creative Labor</button></li>
-        <li><button class="chap" id="conc" onclick="setChapter(this.id)">Conclusion</button></li>
-        </ul>
-    </div>
-    <video id="video" width="1280" height="720" controls>
-        <source src="Humans%20Need%20Not%20Apply.mp4" type="video/mp4"
-        Your browser does not this video.
-        <track default label="English" kind="subtitles" srclang="en" src="Humans%20Need%20Not%20Apply.vtt">
-        <track kind="chapters" srclang="en" src="Humans%20Need%20Not%20Apply%20Chapters.vtt">
-    </video>
-    <div>    
-        <h4 class="infobar">Please visit the original creator of this video at <a href="http://www.cgpgrey.com">CGPGrey.com</a>.</h4>
-        <h5 class="infobar" id="creators">Website by "Gruppe 2 - IM 2016"</h5>
-    </div>
-    </div>
+    </div>-->
     <script src="videoScript.js"></script>
-    
+
     <!-- <img src="PlayPause.png" alt="Play/Pause"> -->
 </body>
 </html>
