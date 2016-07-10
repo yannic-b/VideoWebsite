@@ -37,7 +37,10 @@ function updateChapters() {
         setDescription("conc");
     }
 }
-cgpvideo.ontimeupdate = function() {updateChapters() };
+//cgpvideo.ontimeupdate = function() {updateChapters() };
+cgpvideo.addEventListener("timeupdate",function(){
+    updateChapters();
+});
 
 function highlightChapter(element) {
     element.style.backgroundColor = "rgba(255,255,255,0.3)";
