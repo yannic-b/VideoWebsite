@@ -118,6 +118,7 @@ button.chap {
 }
 #videoDescription p {
     color: rgba(255,255,255,0.4);
+    text-align: justify;
 }
 #videoDescription h2 {
     color: rgba(255,255,255,0.4);

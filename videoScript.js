@@ -1,5 +1,5 @@
 var cgpvideo = document.getElementById("video");
-
+cgpvideo.play();
 
 function updateChapters() {
     var time = cgpvideo.currentTime;
