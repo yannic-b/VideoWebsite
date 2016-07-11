@@ -11,8 +11,8 @@ h1 {
     color: slategrey;
     text-align: left;
     font-size: 30px;
-    font-weight: 300;
-    -webkit-font-smoothing: subpixel-antialiased !important;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased !important;
     color: rgba(255,255,255,0.3);
 }
 
@@ -23,61 +23,9 @@ button {
     cursor: pointer;
 }
 
-ul {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: steelblue;
-}
-
-/* button.img {
-    position: relative;
-    left: 0px;
-    top: 0px;
-} */
-
-#PlayPause {
-    background-image: url(PlayPause.png);
-}
-
-#Stop {
-    background-image: url(Stop.png);
-}
-
-#Smaller {
-    background-image: url(Smaller.png);
-}
-
-#Bigger {
-    background-image: url(Bigger.png);
-}
-
-#Fullscreen {
-    background-image: url(Fullscreen.png);
-}
-
-#Subtitles {
-    background-image: url(Subtitles.png);
-}
-
-
-#headline {
-    position: relative;
-}
-
-#controls {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    display:hidden;
-}
-
-button.ctrl {
-    width: 100px;
-    height: 50PX;
-    background-size: contain;
 }
 
 #chapters {
@@ -122,7 +70,7 @@ button.chap {
 }
 #videoDescription h2 {
     color: rgba(255,255,255,0.4);
-    font-weight: 300;
+    font-weight: 400;
 }
 
 video::cue {
